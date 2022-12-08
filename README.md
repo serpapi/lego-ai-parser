@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-  `Daath AI Parser` is an open-source application that uses OpenAI to parse visible text of HTML elements. It is built on top of FastAPI. It is ready to set up as a server, and make calls from any language.
+  Daath AI Parser is an open-source application that uses OpenAI to parse visible text of HTML elements. It is built on top of FastAPI. It is ready to set up as a server, and make calls from any language.
 </p>
 
 ---
@@ -254,6 +254,54 @@ Custom Parser Result will be the same as the preset one:
           "Type": "Coffee shop"
       }
     ]
+}
+```
+
+You may also get arrays from your prompts by separating your results with a special double character, `#$`. Here is an representation of such utility in `product_options` key proivded in the example below:
+
+```json
+{
+  # ...
+  "examples_for_prompt": [
+    {
+      "text": "Stumptown Coffee Roasters, Medium Roast Organic Whole Bean Coffee Gifts - Holler Mountain 12 Ounce Bag with Flavor Notes of Citrus Zest, Caramel and Hazelnut 12 Ounce 4.3 4.3 out of 5 stars (8,311) Options: 2 sizes, 6 flavors 2 sizes, 6 flavors Climate Pledge Friendly uses sustainability certifications to highlight products that support our commitment to help preserve the natural world. Time is fleeting. Learn more Product Certification (1) USDA Organic",
+      "classifications": {
+        "line": "3",
+        "title": "Stumptown Coffee Roasters, Medium Roast Organic Whole Bean Coffee Gifts - Holler Mountain 12 Ounce Bag with Flavor Notes of Citrus Zest, Caramel and Hazelnut",
+        "scale": "12 Ounce",
+        "rating": "4.3",
+        "reviews": "8,311",
+        "product_options": "2 sizes#$6 flavors#$",
+        "tags": "Climate Pledge Friendly#$USDA Organic#$"
+      }
+    },
+    #...
+  ]
+  #...
+}
+```
+
+Constructing a custom parser with such example will result in the following structure:
+
+```json
+{
+  "results": [
+    {
+      "Line": "X",
+      "Product Options": [
+        "X",
+        "X"
+      ],
+      "Rating": "X",
+      "Reviews": "X",
+      "Scale": "X",
+      "Tags": [
+        "X",
+        "X"
+      ],
+      "Title": "X"
+    }
+  ]
 }
 ```
 

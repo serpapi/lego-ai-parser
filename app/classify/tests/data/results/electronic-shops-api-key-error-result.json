@@ -1,0 +1,12 @@
+{
+  "results": [
+    {
+      "error": {
+        "message": "Incorrect API key provided: Error AP* KEY. You can find your API key at https://beta.openai.com.",
+        "type": "invalid_request_error",
+        "param": null,
+        "code": "invalid_api_key"
+      }
+    }
+  ]
+}

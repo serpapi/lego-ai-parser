@@ -1,0 +1,35 @@
+{
+  "path": "google.google_local_results",
+  "parse_only": {
+      "responses": [
+          {
+              "choices": [
+                  {
+                      "text": "| Nicosia | - | - | 9 | 14 | Closed ⋅ Opens 8AM Mon | 4.4 | Kıbrıs Restorasyon | Car repair and maintenance service | - | +90 000 854 88 00 | - |"
+                  }
+              ]
+          }
+      ],
+      "prompt_objects": {
+          "invalid_lines_indexes": [],
+          "desired_lines": [
+              "Kıbrıs Restorasyon 4.4 (14) · Car repair and maintenance service Nicosia · +90 000 854 88 00 Closed ⋅ Opens 8AM Mon"
+          ],
+          "labels": [
+              "Address",
+              "Description Or Review",
+              "Expensiveness",
+              "Line",
+              "Number Of Reviews",
+              "Open Hours",
+              "Rating",
+              "Title",
+              "Type",
+              "Delivery Options",
+              "Phone",
+              "Years Of Business"
+          ]
+      }
+  },
+  "mock_name": "app/classify/tests/data/targets/car-repair-parse-only.json"
+}

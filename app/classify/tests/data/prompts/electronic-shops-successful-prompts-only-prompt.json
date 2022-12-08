@@ -1,0 +1,27 @@
+{
+  "prompts": [
+    "A table with 12 cells in each row summarizing the different parts of the text at each line:\n\nHoundstooth Coffee 4.6(824) \u00b7 $$ \u00b7 Coffee shop 401 Congress Ave. #100c \u00b7 In Frost Bank Tower Closed \u22c5 Opens 7AM Cozy hangout for carefully sourced brews\nStarbucks 4.4(471) \u00b7 $$ \u00b7 Coffee shop 301 W 3rd St Opens soon \u22c5 5:30AM Iconic Seattle-based coffeehouse chain\nProgress Coffee Bank of America Building 5.0(1) \u00b7 Cafe 515 Congress Ave. Closed \u22c5 Opens 7AM Dine-in\u00b7Takeout\u00b7No delivery\nCoffee Cantata Nicosia 5.0(3) \u00b7 Tea store Nicosia Closed \u22c5 Opens 10AM Mon In-store shopping\nLa Bella Bakery - Gloria Jean's Coffees K. Kaymakl\u0131 4.4(251) \u00b7 \u20ac\u20ac \u00b7 Coffee shop \u015eehit mustafa Ruso Caddesi no:148 - K\u00fc\u00e7\u00fck Kaymakl\u0131 - Lefko\u015fa - KKTC Mersin 10 Turkey Lefko\u015fa \u00b7 In Ayd\u0131n Oto Camlar\u0131 & D\u00f6\u015feme Ltd. On the menu: tea\nA.D.A. Auto Repair Center 4.8(26) \u00b7 Auto repair shop 30+ years in business \u00b7 Nicosia \u00b7 99 639471 Closes soon \u22c5 3PM \"I strongly recommend this repair shop.\"\nEvolution GYM No reviews \u00b7 Gym Nicosia \u00b7 +90 533 821 10 02 Open \u22c5 Closes 6PM\nA McDonald's 420 Fulton St \u00b7 (929) 431-6994 Open \u22c5 Closes 1AM Dine-in \u00b7 Curbside pickup \u00b7 No-contact delivery\nSuzzDVD & Technology Center 4.0 (6) \u00b7 Electronics store Nicosia \u00b7 +90 392 227 18 79 Open 24 hours In-store shopping \u00b7 In-store pick-up \u00b7 Delivery\nA. K. MOBILE ACCESSORIES AND SERVICE STORE 2.0 (4) \u00b7 Electronics store Nicosia \u00b7 22 661817 Closed \u22c5 Opens 10:30AM Thu In-store shopping \u00b7 Delivery\nMr. Electronic CY LTD 4.8 (9) \u00b7 Electronics store Nicosia \u00b7 96 518764 Closed \u22c5 Opens 8:30AM Thu In-store shopping \u00b7 In-store pick-up \u00b7 Delivery\n| Address | Description Or Review | Expensiveness | Line | Number Of Reviews | Open Hours | Rating | Title | Type | Delivery Options | Phone | Years Of Business |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 401 Congress Ave. #100c \u00b7 In Frost Bank Tower | Cozy hangout for carefully sourced brews | $$ | 1 | 824 | Opens 7AM | 4.1 | Houndstooth Coffee | Coffee Shop | - | - | - |\n| 301 W 3rd St | Iconic Seattle-based coffeehouse chain | $$ | 2 | 471 | Opens soon \u22c5 5:30AM | 4.1 | Starbucks | Coffee Shop | - | - | - |\n| 515 Congress Ave. | - | - | 3 | 1 | Closed \u22c5 Opens 7AM | 5.0 | Progress Coffee Bank of America Building | Cafe | Dine-in\u00b7Takeout\u00b7No delivery | - | - |\n| Nicosia | - | - | 4 | 3 | Closed \u22c5 Opens 10AM Mon | 5.0 | Coffee Cantata Nicosia | Tea store | In-store shopping | - | - |\n| \u015eehit mustafa Ruso Caddesi no:148 - K\u00fc\u00e7\u00fck Kaymakl\u0131 - Lefko\u015fa - KKTC Mersin 10 Turkey Lefko\u015fa \u00b7 In Ayd\u0131n Oto Camlar\u0131 & D\u00f6\u015feme Ltd. | On the menu: tea | \u20ac\u20ac | 5 | 251 | - | 4.4 | La Bella Bakery - Gloria Jean's Coffees K. Kaymakl\u0131 | Coffee shop | - | - | - |\n| Nicosia | \"I strongly recommend this repair shop.\" | - | 6 | 26 | Closes soon \u22c5 3PM | 4.8 | A.D.A. Auto Repair Center | Auto repair shop | - | 99 008200 | 30+ years in business |\n| Nicosia | - | - | 7 | - | Closes 6PM | - | Evolution GYM | Gym | - | +90 000 827 11 00 | - |\n| 420 Fulton St | - | - | 8 | - | Open \u22c5 Closes 1AM | A | McDonald's | - | Dine-in \u00b7 Curbside pickup \u00b7 No-contact delivery | (900) 451-6800 | - |"
+  ],
+  "prompt_objects": {
+    "invalid_lines_indexes": [],
+    "desired_lines": [
+      "SuzzDVD & Technology Center 4.0 (6) \u00b7 Electronics store Nicosia \u00b7 +90 392 227 18 79 Open 24 hours In-store shopping \u00b7 In-store pick-up \u00b7 Delivery",
+      "A. K. MOBILE ACCESSORIES AND SERVICE STORE 2.0 (4) \u00b7 Electronics store Nicosia \u00b7 22 661817 Closed \u22c5 Opens 10:30AM Thu In-store shopping \u00b7 Delivery",
+      "Mr. Electronic CY LTD 4.8 (9) \u00b7 Electronics store Nicosia \u00b7 96 518764 Closed \u22c5 Opens 8:30AM Thu In-store shopping \u00b7 In-store pick-up \u00b7 Delivery"
+    ],
+    "labels": [
+      "Address",
+      "Description Or Review",
+      "Expensiveness",
+      "Line",
+      "Number Of Reviews",
+      "Open Hours",
+      "Rating",
+      "Title",
+      "Type",
+      "Delivery Options",
+      "Phone",
+      "Years Of Business"
+    ]
+  }
+}

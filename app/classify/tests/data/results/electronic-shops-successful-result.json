@@ -1,0 +1,33 @@
+{
+  "results": [
+    {
+      "Address": "Nicosia",
+      "Number Of Reviews": "6",
+      "Open Hours": "Open 24 hours",
+      "Rating": "4.0",
+      "Title": "SuzzDVD & Technology Center",
+      "Type": "Electronics store",
+      "Delivery Options": "In-store shopping \u00b7 In-store pick-up \u00b7 Delivery"
+    },
+    {
+      "Address": "Nicosia",
+      "Number Of Reviews": "4",
+      "Open Hours": "Closed \u22c5 Opens 10:30AM Thu",
+      "Rating": "2.0",
+      "Title": "A. K. MOBILE ACCESSORIES AND SERVICE STORE",
+      "Type": "Electronics store",
+      "Delivery Options": "In-store shopping \u00b7 Delivery",
+      "Phone": "22 661817"
+    },
+    {
+      "Address": "Nicosia",
+      "Number Of Reviews": "9",
+      "Open Hours": "Closed \u22c5 Opens 8:30AM Thu",
+      "Rating": "4.8",
+      "Title": "Mr. Electronic CY LTD",
+      "Type": "Electronics store",
+      "Delivery Options": "In-store shopping \u00b7 In-store pick-up \u00b7 Delivery",
+      "Phone": "96 518764"
+    }
+  ]
+}

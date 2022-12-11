@@ -15,7 +15,7 @@ class Results:
 
   def get_results_from_openai(self):
     async def call_openai(session, prompt):
-      self.classifier.data.prompt = prompt
+      self.classifier.data.prompt = prompt + "\n"
       headers = {
         "Content-Type": "application/json",
         "Authorization": "Bearer {}".format(self.targets.openai_key)
@@ -93,9 +93,16 @@ class Results:
               if desired_array != []:
                 result_dict[self.prompt_objects.labels[i]] = desired_array
             elif line[i] != "-" and self.prompt_objects.labels[i] != "Line": # String
-              desired_line = self.prompt_objects.desired_lines[index + line_index]
-              if line[i] in desired_line:
-                result_dict[self.prompt_objects.labels[i]] = line[i]
+              try:
+                desired_line = self.prompt_objects.desired_lines[index + line_index]
+                if line[i] in desired_line:
+                  result_dict[self.prompt_objects.labels[i]] = line[i]
+              except:
+                result_dict = {"error": "The prompt is creating more results than expected. Try to restructure targets, and or examples."}
           results.append(result_dict)
         index = index + len(lines)
+    
+    if results == []:
+      results = [{"error": "The model predicted a completion that begins with a stop sequence, resulting in no output. Consider adjusting your prompt or stop sequences."}]
+    
     return results

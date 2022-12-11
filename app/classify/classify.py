@@ -30,7 +30,7 @@ class Classify:
 				targets = Targets(**targets_dict)
 
 			# Call the parser command dictionary or return an error
-			if targets.classifier != None and targets.parse_only == False:
+			if targets.classifier != None and (targets.parse_only == False or targets.parse_only == None):
 				classifier = json_to_pydantic(targets.classifier.dict())
 			else:
 				try:

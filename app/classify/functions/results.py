@@ -92,11 +92,12 @@ class Results:
                   desired_array.append(word.strip())
               if desired_array != []:
                 result_dict[self.prompt_objects.labels[i]] = desired_array
-            elif line[i] != "-" and self.prompt_objects.labels[i] != "Line": # String
+            else:
               try:
-                desired_line = self.prompt_objects.desired_lines[index + line_index]
-                if line[i] in desired_line:
-                  result_dict[self.prompt_objects.labels[i]] = line[i]
+                if line[i] != "-" and self.prompt_objects.labels[i] != "Line": # String
+                  desired_line = self.prompt_objects.desired_lines[index + line_index]
+                  if line[i] in desired_line:
+                    result_dict[self.prompt_objects.labels[i]] = line[i]
               except:
                 result_dict = {"error": "The prompt is creating more results than expected. Try to restructure targets, and or examples."}
           results.append(result_dict)

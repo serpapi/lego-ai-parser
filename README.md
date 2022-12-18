@@ -9,15 +9,12 @@
 <br>
 <a href="https://replit.com/@EmirhanAkdeniz1/Example-with-one-element#main.py">Interactive Example on Replit</a>
 <br>
-<div align="center">
-<h2 align="center">Currently Supported Preset Parsers are:</h2>
-- Google Local Results Parser</li><br>
-- Amazon Listings Parser</li><br>
-- Etsy Listings Parser</li><br>
-- Wayfair Listings Parser</li><br>
-</div>
-<br>
 </p>
+
+|Currently Supported Preset Parsers||||
+|-|-|-|-|
+|Google Local Results Parser|Amazon Listings Parser|Amazon Listings Parser|Etsy Listings Parser|
+|Wayfair Listings Parser|BestBuy Listings Parser|Costco Listings Parser||
 
 ---
 

@@ -13,8 +13,8 @@
 
 |Currently Supported Preset Parsers||||
 |-|-|-|-|
-|Google Local Results Parser|Amazon Listings Parser|Amazon Listings Parser|Etsy Listings Parser|
-|Wayfair Listings Parser|BestBuy Listings Parser|Costco Listings Parser||
+|Google Local Results Parser|Amazon Listings Parser|Etsy Listings Parser|Wayfair Listings Parser|
+|BestBuy Listings Parser|Costco Listings Parser|||
 
 ---
 

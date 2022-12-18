@@ -24,6 +24,6 @@ class Parser:
       if re.search(self.html_regex, text):
         entry = self.parse_single(text)
       else:
-        entry = re.sub("\n", "", text)
+        entry = self.parse_single("<p>{}</p>".format(text))
       lined_targets.append(entry)
     return lined_targets

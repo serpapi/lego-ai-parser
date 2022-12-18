@@ -15,6 +15,7 @@ class Parser:
     tree = tree.text(separator=' ', strip=True)
     tree = re.sub(self.explicitly_excluded_regex,' ',tree).strip()
     tree = re.sub('  ', ' ', tree).strip()
+    tree = re.sub('\|', '｜', tree).strip()
     return tree
 
   def parse(self, texts):

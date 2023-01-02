@@ -1,5 +1,6 @@
 <br>
 
+[![Build status][Build-shield]][Build-url] 
 [![Contributors][contributors-shield]][contributors-url] 
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -739,6 +740,8 @@ They will only be created in the initial call not to exhaust credits in testing.
   ]
 }
 ```
+[Build-shield]: https://github.com/kagermanov27/daath-ai-parser/workflows/build/badge.svg?branch=master&event=push
+[Build-url]: https://img.shields.io/github/actions/workflow/status/kagermanov27/daath-ai-parser/python-app.yml
 [contributors-shield]: https://img.shields.io/github/contributors/kagermanov27/daath-ai-parser.svg
 [contributors-url]: https://github.com/kagermanov27/daath-ai-parser/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/kagermanov27/daath-ai-parser.svg

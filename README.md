@@ -1,3 +1,14 @@
+<br>
+
+[![Contributors][contributors-shield]][contributors-url] 
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![Issues][issuesclosed-shield]][issuesclosed-url]
+[![MIT License][license-shield]][license-url]
+[![Open Source Love](https://badges.frapsoft.com/os/v3/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
+</br>
+
 <h1 align="center">Daath AI Parser</h1>
 <p align="center">
   <img src="https://user-images.githubusercontent.com/73674035/205769347-bc9327b4-e35d-4f42-9716-9de21b54e889.jpg" alt="The Fool of Daath"/>
@@ -728,3 +739,17 @@ They will only be created in the initial call not to exhaust credits in testing.
   ]
 }
 ```
+[contributors-shield]: https://img.shields.io/github/contributors/kagermanov27/daath-ai-parser.svg
+[contributors-url]: https://github.com/kagermanov27/daath-ai-parser/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/kagermanov27/daath-ai-parser.svg
+[forks-url]: https://github.com/kagermanov27/daath-ai-parser/network/members
+[stars-shield]: https://img.shields.io/github/stars/kagermanov27/daath-ai-parser.svg
+[stars-url]: https://github.com/kagermanov27/daath-ai-parser/stargazers
+[issues-shield]: https://img.shields.io/github/issues/kagermanov27/daath-ai-parser.svg
+[issues-url]: https://github.com/kagermanov27/daath-ai-parser/issues
+[issuesclosed-shield]: https://img.shields.io/github/issues-closed/kagermanov27/daath-ai-parser.svg
+[issuesclosed-url]: https://github.com/kagermanov27/daath-ai-parser/issues?q=is%3Aissue+is%3Aclosed
+[board-shield]: https://img.shields.io/badge/Kanban-Board-grey?logo=data:image/svg%2bxml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEzLjM1MiAxNC41ODVsLTQuNTA5IDQuNjE0LjcyLTQuMDYyTDMuNDI4IDcuNTcgMCA3Ljc1MyA3LjU4IDB2Mi45NTNsNy4yMTQgNi42NDYgNC41MTMtMS4xMDUtNC42ODkgNC45ODJMMjQgMjRsLTEwLjY0OC05LjQxNXoiLz48L3N2Zz4=
+[board-url]: https://github.com/kagermanov27/daath-ai-parser/projects/1
+[license-shield]: https://img.shields.io/github/license/kagermanov27/daath-ai-parser.svg
+[license-url]: https://github.com/kagermanov27/daath-ai-parser/blob/main/LICENSE

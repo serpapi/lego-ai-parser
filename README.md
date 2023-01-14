@@ -10,7 +10,6 @@
   <a href="">[![Issues][issuesclosed-shield]][issuesclosed-url]</a>
   <a href="">[![MIT License][license-shield]][license-url]</a>
   <a href="">[![Server Status][server-shield]][server-url]</a>
-  <a href="">[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)</a>
 
 </div>
 

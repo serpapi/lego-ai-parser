@@ -1,20 +1,25 @@
 <h1 align="center">Daath AI Parser</h1>
 
+<div align="center">
 
-[![Build status][Build-shield]][Build-url] 
-[![Contributors][contributors-shield]][contributors-url] 
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![Issues][issuesclosed-shield]][issuesclosed-url]
-[![MIT License][license-shield]][license-url]
-[![Server Status][server-shield]][server-url]
-[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
+  <a href="">[![Build status][Build-shield]][Build-url] </a>
+  <a href="">[![Contributors][contributors-shield]][contributors-url] </a>
+  <a href="">[![Forks][forks-shield]][forks-url]</a>
+  <a href="">[![Stargazers][stars-shield]][stars-url]</a>
+  <a href="">[![Issues][issues-shield]][issues-url]</a>
+  <a href="">[![Issues][issuesclosed-shield]][issuesclosed-url]</a>
+  <a href="">[![MIT License][license-shield]][license-url]</a>
+  <a href="">[![Server Status][server-shield]][server-url]</a>
 
+</div>
+
+</br>
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/73674035/205769347-bc9327b4-e35d-4f42-9716-9de21b54e889.jpg" alt="The Fool of Daath"/>
 </p>
+
+</br>
 
 <p align="center">
   Daath AI Parser is an open-source application that uses OpenAI to parse visible text of HTML elements. It is built on top of FastAPI. It is ready to set up as a server, and make calls from any language. It is currently hosted in <a href="https://ai.kagermanov.com">ai.kagermanov.com</a>.
@@ -24,10 +29,23 @@
 <br>
 </p>
 
-|Currently Supported Preset Parsers||||
-|-|-|-|-|
-|Google Local Results Parser|Amazon Listings Parser|Etsy Listings Parser|Wayfair Listings Parser|
-|BestBuy Listings Parser|Costco Listings Parser|Macy's Listings Parser|Nordstrom Listings Parser|
+<table align="center">
+  <tr>
+    <th text-align="center", colspan="4">Currently Supported Preset Parsers</th>
+   </tr>
+  <tr>
+    <th>Google Local Results Parser</th>
+    <th>Amazon Listings Parser</th>
+    <th>Etsy Listings Parser</th>
+    <th>Wayfair Listings Parser</th>
+  </tr>
+  <tr>
+    <th>BestBuy Listings Parser</th>
+    <th>Costco Listings Parser</th>
+    <th>Macy's Listings Parser</th>
+    <th>Nordstrom Listings Parser</th>
+  </tr>
+</table>
 
 ---
 

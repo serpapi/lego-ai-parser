@@ -16,7 +16,7 @@
 </br>
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/73674035/205769347-bc9327b4-e35d-4f42-9716-9de21b54e889.jpg" alt="The Fool of Daath"/>
+  <img src="https://private-user-images.githubusercontent.com/73674035/337635264-d98f7ae0-dd20-4554-a182-61aa3848a3b4.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTc3NTk4NjUsIm5iZiI6MTcxNzc1OTU2NSwicGF0aCI6Ii83MzY3NDAzNS8zMzc2MzUyNjQtZDk4ZjdhZTAtZGQyMC00NTU0LWExODItNjFhYTM4NDhhM2I0LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA2MDclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNjA3VDExMjYwNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTIxMjM3Yjc1NDM1NDYyZjM0OWEyZjhlZDA4OTk2MmM3ODRkMzgwYWVmZjVkNGMwMmI2YjM5OTUxNjQ3MjBjMTAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.WUp7WjJx8vncZUnEBRZakqKaCphfZzow20T77xaSIMk" alt="A Child with a Calculator"/>
 </p>
 
 </br>

@@ -1,4 +1,4 @@
-<h1 align="center">Daath AI Parser</h1>
+<h1 align="center">Lego AI Parser</h1>
 
 <div align="center">
 
@@ -22,7 +22,7 @@
 </br>
 
 <p align="center">
-  Daath AI Parser is an open-source application that uses OpenAI to parse visible text of HTML elements. It is built on top of FastAPI. It is ready to set up as a server, and make calls from any language. It is currently hosted in <a href="https://ai.kagermanov.com">ai.kagermanov.com</a>.
+  Lego AI Parser is an open-source application that uses OpenAI to parse visible text of HTML elements. It is built on top of FastAPI. It is ready to set up as a server, and make calls from any language. It is currently hosted in <a href="https://ai.kagermanov.com">ai.kagermanov.com</a>.
 <br>
 <br>
 <a href="https://replit.com/@EmirhanAkdeniz1/Example-with-one-element#main.py">Interactive Example on Replit</a>
@@ -51,7 +51,7 @@
 
 <h2 align="center">Table of Contents</h2>
 
-- [Daath AI Parser](#daath-ai-parser)
+- [Lego AI Parser](#lego-ai-parser)
   * [Basic Usage](#basic-usage)
   * [Parsing Multiple Elements](#parsing-multiple-elements)
   * [Designing Custom Parsers](#designing-custom-parsers)
@@ -75,7 +75,7 @@
 
 - ### Use the path for the preset parser
 
-You can find the supported preset parsers and their fields at [Daath Preset Parsers Page](https://www.kagermanov.com/daath-preset-parsers)
+You can find the supported preset parsers and their fields at [Lego Preset Parsers Page](https://www.kagermanov.com/lego-preset-parsers)
 
 - ### Use your OpenAI API Key
 
@@ -131,7 +131,7 @@ These instructions are for basic usage. Sharing API Keys with third-party applic
 
 <h2 align="center">Parsing Multiple Elements</h2>
 
-In addition to using HTML of the element, using text you copy from the element is also accepted. You can pass a mixbag of HTML and Text in the same list. If all the elements exceed the token size of the model, `Daath AI Parser` will separate the prompts for you and return the results in the same order. Please note that duplicate items will result in bad parsing.
+In addition to using HTML of the element, using text you copy from the element is also accepted. You can pass a mixbag of HTML and Text in the same list. If all the elements exceed the token size of the model, `Lego AI Parser` will separate the prompts for you and return the results in the same order. Please note that duplicate items will result in bad parsing.
 
 ```py
 import requests
@@ -197,14 +197,14 @@ print(r.json()["results"])
 
 <h2 align="center">Designing Custom Parsers</h2>
 
-In addition to preset parsers, designing your own parsers are also allowed in `Daath AI Parser`. All that is needed is to provide a `prompt`, `examples`, and `details about the OpenAI model` under `classifier` key. Here is a breakdown of such custom parser:
+In addition to preset parsers, designing your own parsers are also allowed in `Lego AI Parser`. All that is needed is to provide a `prompt`, `examples`, and `details about the OpenAI model` under `classifier` key. Here is a breakdown of such custom parser:
 
 ```json
 {
   "classifier": {
-    "main_prompt": "String, A prompt commanding the model to classify each item you desire. `NUMBER_OF_LABELS` is used to automatically determine the size of all unique labels in each example by `Daath AI Parser`."
+    "main_prompt": "String, A prompt commanding the model to classify each item you desire. `NUMBER_OF_LABELS` is used to automatically determine the size of all unique labels in each example by `Lego AI Parser`."
     "data": "Dictionary, Details of the model you want to employ. Same data field you would use in a normal OpenAI API call, excluding `max_tokens`",
-    "model_specific_token_size": "Integer, The maximum number of tokens allowed for the model. This is used to determine where to split multiple prompt calls in a given command. It is wise to set it just below the maximum number of tokens allowed by the model. For example, if the model allows 4000 tokens, you can set it to 3800. This is because the token count made by `Daath AI Parser` is determined by GPT-2 standards, and it might be higher than the actual token count of the model.",
+    "model_specific_token_size": "Integer, The maximum number of tokens allowed for the model. This is used to determine where to split multiple prompt calls in a given command. It is wise to set it just below the maximum number of tokens allowed by the model. For example, if the model allows 4000 tokens, you can set it to 3800. This is because the token count made by `Lego AI Parser` is determined by GPT-2 standards, and it might be higher than the actual token count of the model.",
     "openai_endpoint": "String, Endpoint you want to call the model from. For example: `https://api.openai.com/v1/completions`",
     "explicitly_excluded_strings": "List, A list of strings that you want to exclude from the results. For example, if you want to exclude new lines, you may add \"\n\" to the list.",
     "examples_for_prompt": [
@@ -440,11 +440,11 @@ data = {
   ]
 }
 
-response_from_daath_ai_parser = requests.post(url=uri, headers=headers, json=data)
+response_from_lego_ai_parser = requests.post(url=uri, headers=headers, json=data)
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-prompts = response_from_daath_ai_parser["prompts"]
+prompts = response_from_lego_ai_parser["prompts"]
 
 responses = []
 
@@ -487,11 +487,11 @@ data = {
   ]
 }
 
-response_from_daath_ai_parser = requests.post(url=uri, headers=headers, json=data)
+response_from_lego_ai_parser = requests.post(url=uri, headers=headers, json=data)
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-prompts = response_from_daath_ai_parser["prompts"]
+prompts = response_from_lego_ai_parser["prompts"]
 
 responses = []
 
@@ -515,13 +515,13 @@ data = {
   "path": "google.google_local_results",
   "parse_only": {
     "responses": responses
-    "prompt_objects": response_from_daath_ai_parser["prompt_objects"]
+    "prompt_objects": response_from_lego_ai_parser["prompt_objects"]
   }
 }
 
-response_from_daath_ai_parser = requests.post(url=uri, headers=headers, json=data)
+response_from_lego_ai_parser = requests.post(url=uri, headers=headers, json=data)
 
-print(response_from_daath_ai_parser.json())
+print(response_from_lego_ai_parser.json())
 ```
 
 Here is an example response with parse only:
@@ -600,7 +600,7 @@ If there are any other errors you encounter, feel free to create an issue about 
 
 <h2 align="center">Customizing Default Allowed Concurrency and API Key of Cliend-Side Calls</h2>
 
-You can adjust the number of allowed concurrency for the client-side calls with `allowed_concurrency` key. The maximum number of calls you can make per minute is still need to be configured by you. You may put sleep time between calls to `Daath AI Parser` to avoid exceeding the limit imposed by OpenAI. Here is an example script where allowed concurrency is 2:
+You can adjust the number of allowed concurrency for the client-side calls with `allowed_concurrency` key. The maximum number of calls you can make per minute is still need to be configured by you. You may put sleep time between calls to `Lego AI Parser` to avoid exceeding the limit imposed by OpenAI. Here is an example script where allowed concurrency is 2:
 
 ```python
 import requests
@@ -629,13 +629,13 @@ By default, allowed concurrency is `1`. You can change the default `allowed_conc
 
 <h2 align="center">Contributions Guide</h2>
 
-For recent updates, head to [Contributions Guide Page](https://github.com/kagermanov27/daath-ai-parser/blob/master/CONTRIBUTING.md)
+For recent updates, head to [Contributions Guide Page](https://github.com/kagermanov27/lego-ai-parser/blob/master/CONTRIBUTING.md)
 
 If you want to contribute to this project, you can open a pull request. You can also create an issue if you have any questions or suggestions.
 
 - ### Reporting Issues or Feature Requests
 
-All kinds of bug reports, suggestions, and feature requests are welcomed. Head to [Issues](https://github.com/kagermanov27/daath-ai-parser/issues) to keep track of the progress, or contribute to it.
+All kinds of bug reports, suggestions, and feature requests are welcomed. Head to [Issues](https://github.com/kagermanov27/lego-ai-parser/issues) to keep track of the progress, or contribute to it.
 
 - ### Adding a New Preset Parser
 
@@ -759,21 +759,21 @@ They will only be created in the initial call not to exhaust credits in testing.
   ]
 }
 ```
-[Build-shield]: https://github.com/kagermanov27/daath-ai-parser/actions/workflows/python-app.yml/badge.svg
-[Build-url]: https://github.com/kagermanov27/daath-ai-parser/actions/workflows/python-app.yml
-[contributors-shield]: https://img.shields.io/github/contributors/kagermanov27/daath-ai-parser.svg
-[contributors-url]: https://github.com/kagermanov27/daath-ai-parser/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/kagermanov27/daath-ai-parser.svg
-[forks-url]: https://github.com/kagermanov27/daath-ai-parser/network/members
-[stars-shield]: https://img.shields.io/github/stars/kagermanov27/daath-ai-parser.svg
-[stars-url]: https://github.com/kagermanov27/daath-ai-parser/stargazers
-[issues-shield]: https://img.shields.io/github/issues/kagermanov27/daath-ai-parser.svg
-[issues-url]: https://github.com/kagermanov27/daath-ai-parser/issues
-[issuesclosed-shield]: https://img.shields.io/github/issues-closed/kagermanov27/daath-ai-parser.svg
-[issuesclosed-url]: https://github.com/kagermanov27/daath-ai-parser/issues?q=is%3Aissue+is%3Aclosed
+[Build-shield]: https://github.com/kagermanov27/lego-ai-parser/actions/workflows/python-app.yml/badge.svg
+[Build-url]: https://github.com/kagermanov27/lego-ai-parser/actions/workflows/python-app.yml
+[contributors-shield]: https://img.shields.io/github/contributors/kagermanov27/lego-ai-parser.svg
+[contributors-url]: https://github.com/kagermanov27/lego-ai-parser/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/kagermanov27/lego-ai-parser.svg
+[forks-url]: https://github.com/kagermanov27/lego-ai-parser/network/members
+[stars-shield]: https://img.shields.io/github/stars/kagermanov27/lego-ai-parser.svg
+[stars-url]: https://github.com/kagermanov27/lego-ai-parser/stargazers
+[issues-shield]: https://img.shields.io/github/issues/kagermanov27/lego-ai-parser.svg
+[issues-url]: https://github.com/kagermanov27/lego-ai-parser/issues
+[issuesclosed-shield]: https://img.shields.io/github/issues-closed/kagermanov27/lego-ai-parser.svg
+[issuesclosed-url]: https://github.com/kagermanov27/lego-ai-parser/issues?q=is%3Aissue+is%3Aclosed
 [board-shield]: https://img.shields.io/badge/Kanban-Board-grey?logo=data:image/svg%2bxml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEzLjM1MiAxNC41ODVsLTQuNTA5IDQuNjE0LjcyLTQuMDYyTDMuNDI4IDcuNTcgMCA3Ljc1MyA3LjU4IDB2Mi45NTNsNy4yMTQgNi42NDYgNC41MTMtMS4xMDUtNC42ODkgNC45ODJMMjQgMjRsLTEwLjY0OC05LjQxNXoiLz48L3N2Zz4=
-[board-url]: https://github.com/kagermanov27/daath-ai-parser/projects/1
-[license-shield]: https://img.shields.io/github/license/kagermanov27/daath-ai-parser.svg
-[license-url]: https://github.com/kagermanov27/daath-ai-parser/blob/master/LICENSE
+[board-url]: https://github.com/kagermanov27/lego-ai-parser/projects/1
+[license-shield]: https://img.shields.io/github/license/kagermanov27/lego-ai-parser.svg
+[license-url]: https://github.com/kagermanov27/lego-ai-parser/blob/master/LICENSE
 [server-shield]: https://img.shields.io/website?down_color=Red&down_message=Down&label=Server&up_color=Green&up_message=Up&url=https%3A%2F%2Fai.kagermanov.com
 [server-url]: https://ai.kagermanov.com

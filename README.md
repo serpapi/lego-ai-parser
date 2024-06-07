@@ -22,7 +22,7 @@
 </br>
 
 <p align="center">
-  Lego AI Parser is an open-source application that uses OpenAI to parse visible text of HTML elements. It is built on top of FastAPI. It is ready to set up as a server, and make calls from any language. It is currently hosted in <a href="https://ai.kagermanov.com">ai.kagermanov.com</a>.
+  Lego AI Parser is an open-source application that uses OpenAI to parse visible text of HTML elements. It is built on top of FastAPI. It is ready to set up as a server, and make calls from any language.
 <br>
 <br>
 <a href="https://replit.com/@EmirhanAkdeniz1/Example-with-one-element#main.py">Interactive Example on Replit</a>

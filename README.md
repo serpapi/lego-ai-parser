@@ -9,7 +9,6 @@
   <a href="">[![Issues][issues-shield]][issues-url]</a>
   <a href="">[![Issues][issuesclosed-shield]][issuesclosed-url]</a>
   <a href="">[![MIT License][license-shield]][license-url]</a>
-  <a href="">[![Server Status][server-shield]][server-url]</a>
 
 </div>
 
@@ -73,10 +72,6 @@
 
 <img width="1463" alt="image" src="https://i.imgur.com/8Ql6M4i.gif">
 
-- ### Use the path for the preset parser
-
-You can find the supported preset parsers and their fields at [Lego Preset Parsers Page](https://www.kagermanov.com/lego-preset-parsers)
-
 - ### Use your OpenAI API Key
 
 You need to [register a free account](https://beta.openai.com/signup) first. You may find your API Key [here](https://beta.openai.com/account/api-keys).
@@ -87,7 +82,7 @@ You need to [register a free account](https://beta.openai.com/signup) first. You
 ```py
 import requests
 
-uri = "https://ai.kagermanov.com/classify"
+uri = "https://yourserver.com/classify"
 
 headers = {"Content-Type": "application/json"}
 
@@ -136,7 +131,7 @@ In addition to using HTML of the element, using text you copy from the element i
 ```py
 import requests
 
-uri = "https://ai.kagermanov.com/classify"
+uri = "https://yourserver.com/classify"
 
 headers = {"Content-Type": "application/json"}
 
@@ -227,7 +222,7 @@ Here is an example script with a Custom Parser:
 ```py
 import requests
 
-uri = "https://ai.kagermanov.com/classify"
+uri = "https://yourserver.com/classify"
 
 headers = {"Content-Type": "application/json"}
 
@@ -356,7 +351,7 @@ You can get only the prompts you need to call the OpenAI endpoint with `prompts_
 ```py
 import requests
 
-uri = "https://ai.kagermanov.com/classify"
+uri = "https://yourserver.com/classify"
 
 headers = {"Content-Type": "application/json"}
 
@@ -428,7 +423,7 @@ import os
 import openai
 import requests
 
-uri = "https://ai.kagermanov.com/classify"
+uri = "https://yourserver.com/classify"
 
 headers = {"Content-Type": "application/json"}
 
@@ -475,7 +470,7 @@ import requests
 
 
 # Prompts Only Call
-uri = "https://ai.kagermanov.com/classify"
+uri = "https://yourserver.com/classify"
 
 headers = {"Content-Type": "application/json"}
 
@@ -605,7 +600,7 @@ You can adjust the number of allowed concurrency for the client-side calls with 
 ```python
 import requests
 
-uri = "https://ai.kagermanov.com/classify"
+uri = "https://yourserver.com/classify"
 
 headers = {"Content-Type": "application/json"}
 
@@ -629,13 +624,13 @@ By default, allowed concurrency is `1`. You can change the default `allowed_conc
 
 <h2 align="center">Contributions Guide</h2>
 
-For recent updates, head to [Contributions Guide Page](https://github.com/kagermanov27/lego-ai-parser/blob/master/CONTRIBUTING.md)
+For recent updates, head to [Contributions Guide Page](https://github.com/serpapi/lego-ai-parser/blob/master/CONTRIBUTING.md)
 
 If you want to contribute to this project, you can open a pull request. You can also create an issue if you have any questions or suggestions.
 
 - ### Reporting Issues or Feature Requests
 
-All kinds of bug reports, suggestions, and feature requests are welcomed. Head to [Issues](https://github.com/kagermanov27/lego-ai-parser/issues) to keep track of the progress, or contribute to it.
+All kinds of bug reports, suggestions, and feature requests are welcomed. Head to [Issues](https://github.com/serpapi/lego-ai-parser/issues) to keep track of the progress, or contribute to it.
 
 - ### Adding a New Preset Parser
 
@@ -759,21 +754,19 @@ They will only be created in the initial call not to exhaust credits in testing.
   ]
 }
 ```
-[Build-shield]: https://github.com/kagermanov27/lego-ai-parser/actions/workflows/python-app.yml/badge.svg
-[Build-url]: https://github.com/kagermanov27/lego-ai-parser/actions/workflows/python-app.yml
-[contributors-shield]: https://img.shields.io/github/contributors/kagermanov27/lego-ai-parser.svg
-[contributors-url]: https://github.com/kagermanov27/lego-ai-parser/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/kagermanov27/lego-ai-parser.svg
-[forks-url]: https://github.com/kagermanov27/lego-ai-parser/network/members
-[stars-shield]: https://img.shields.io/github/stars/kagermanov27/lego-ai-parser.svg
-[stars-url]: https://github.com/kagermanov27/lego-ai-parser/stargazers
-[issues-shield]: https://img.shields.io/github/issues/kagermanov27/lego-ai-parser.svg
-[issues-url]: https://github.com/kagermanov27/lego-ai-parser/issues
-[issuesclosed-shield]: https://img.shields.io/github/issues-closed/kagermanov27/lego-ai-parser.svg
-[issuesclosed-url]: https://github.com/kagermanov27/lego-ai-parser/issues?q=is%3Aissue+is%3Aclosed
+[Build-shield]: https://github.com/serpapi/lego-ai-parser/actions/workflows/python-app.yml/badge.svg
+[Build-url]: https://github.com/serpapi/lego-ai-parser/actions/workflows/python-app.yml
+[contributors-shield]: https://img.shields.io/github/contributors/serpapi/lego-ai-parser.svg
+[contributors-url]: https://github.com/serpapi/lego-ai-parser/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/serpapi/lego-ai-parser.svg
+[forks-url]: https://github.com/serpapi/lego-ai-parser/network/members
+[stars-shield]: https://img.shields.io/github/stars/serpapi/lego-ai-parser.svg
+[stars-url]: https://github.com/serpapi/lego-ai-parser/stargazers
+[issues-shield]: https://img.shields.io/github/issues/serpapi/lego-ai-parser.svg
+[issues-url]: https://github.com/serpapi/lego-ai-parser/issues
+[issuesclosed-shield]: https://img.shields.io/github/issues-closed/serpapi/lego-ai-parser.svg
+[issuesclosed-url]: https://github.com/serpapi/lego-ai-parser/issues?q=is%3Aissue+is%3Aclosed
 [board-shield]: https://img.shields.io/badge/Kanban-Board-grey?logo=data:image/svg%2bxml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEzLjM1MiAxNC41ODVsLTQuNTA5IDQuNjE0LjcyLTQuMDYyTDMuNDI4IDcuNTcgMCA3Ljc1MyA3LjU4IDB2Mi45NTNsNy4yMTQgNi42NDYgNC41MTMtMS4xMDUtNC42ODkgNC45ODJMMjQgMjRsLTEwLjY0OC05LjQxNXoiLz48L3N2Zz4=
-[board-url]: https://github.com/kagermanov27/lego-ai-parser/projects/1
-[license-shield]: https://img.shields.io/github/license/kagermanov27/lego-ai-parser.svg
-[license-url]: https://github.com/kagermanov27/lego-ai-parser/blob/master/LICENSE
-[server-shield]: https://img.shields.io/website?down_color=Red&down_message=Down&label=Server&up_color=Green&up_message=Up&url=https%3A%2F%2Fai.kagermanov.com
-[server-url]: https://ai.kagermanov.com
+[board-url]: https://github.com/serpapi/lego-ai-parser/projects/1
+[license-shield]: https://img.shields.io/github/license/serpapi/lego-ai-parser.svg
+[license-url]: https://github.com/serpapi/lego-ai-parser/blob/master/LICENSE
